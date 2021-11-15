@@ -1,2 +1,2 @@
-# sortAlgorithm
-sort
+# sortsAlgorithms
+the most important sorts algorithms 
