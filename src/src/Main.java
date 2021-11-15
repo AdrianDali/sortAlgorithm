@@ -9,13 +9,24 @@ package src;
  *
  * @author hermo
  */
+ 
 public class Main {
+  
     public static void main(String[] args) {
-        int arr[] = {64,25,12,22,11};
-        SelectionSort sortOne = new SelectionSort();
-        sortOne.sort(arr);
-        sortOne.printArray(arr);
+        Printear printarr = new Printear();
+        //---------------------------------------
+        int arr[] = {12,11,13,5,6};
+        //SelectionSort sortOne = new SelectionSort();
+        //sortOne.sort(arr);
+        //sortOne.printArray(arr);
+        //--------------------------------------
+        InsertionSort sortTwo = new InsertionSort();
+        sortTwo.sort(arr);
+        printarr.printArray(arr);
+    
         
         
     }   
 }
+
+
