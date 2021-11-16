@@ -22,6 +22,12 @@ i = 3. 5 will move to the beginning and all other elements from 11 to 13 will mo
 5, 11, 12, 13, 6
 i = 4. 6 will move to position after 5, and elements from 11 to 13 will move one position ahead of their current position. 
 5, 6, 11, 12, 13 
+
+
+
+THE COMPLEXITY OF THIS ALGORITHM IS  0(N^2)
+
+--THIS ALGORITHM IS FOR SMALL QUANTITY OF DATA--
  */
 package src;
 
