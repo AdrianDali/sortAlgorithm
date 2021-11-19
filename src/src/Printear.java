@@ -12,9 +12,10 @@ package src;
  public class Printear{
     public void printArray(int arr[]){
         int n = arr.length;
+        System.out.print("ARR: ");
         for (int i = 0; i < n; i++){
-            System.out.println(arr[i]+ " ");
+            System.out.print(arr[i]+ " ");
         }
-        System.out.println();
+        System.out.println("");
     }
 }

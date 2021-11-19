@@ -26,8 +26,9 @@ public class Main {
         //-------------------------------------
         int[] arr2 = {10,7,8,9,1,5};
         int n = arr2.length;
+        
         QuickSort sortThree = new QuickSort();
-        sortThree.quickSort(arr,0,n-1);
+        sortThree.quickSort(arr2,0,n-1);
         System.out.println("Sorted array: ");
         printarr.printArray(arr2);
         
