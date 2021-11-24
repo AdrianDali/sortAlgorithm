@@ -34,7 +34,7 @@ public class Main {
         //System.out.println("Sorted array: ");
         //printarr.printArray(arr2);
         //---------------------------------------------------
-        int[] arr3 = {12,11,16,5,6,7};
+        int[] arr3 = {12,11,9,5,7,6};
         System.out.println("Arr");
         printarr.printArray(arr3);
         

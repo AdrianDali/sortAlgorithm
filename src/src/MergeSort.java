@@ -12,20 +12,23 @@ package src;
  */
 public class MergeSort {
     
-      int[] arr3 = {12,11,16,5,6,7};
+      //int[] arr3 = {12,11,9,5,7,6};
     
     //Merges two subarrays of arr[]
     //first subarray is arr[l..m]
     //second subarray is arr[m+1..r]
     void merge(int arr[], int l, int m, int r){
-        
+        Printear pr = new Printear();
         // Find sizes of tho subarrays to be merged
         int n1 = m-l +1;
         int n2 = r - m;
-        
+        System.out.println("n1 "+ n1);
+        System.out.println("n2 "+ n2);
         /*Create temp arrays*/
         int L[] = new int[n1];
         int R[] = new int[n2];
+        pr.printArray(L);
+        pr.printArray(R);
         
         /*Copy data to temps arrays*/
         for (int i = 0; i < n1; ++i)
@@ -34,7 +37,8 @@ public class MergeSort {
             R[j] = arr[m+1+j];
         
         //Merge the temps arrays
-        
+        pr.printArray(L);
+        pr.printArray(R);
         //initial indexes of first and second subarrays
         int i =0, j=0 ;
         
@@ -52,23 +56,27 @@ public class MergeSort {
             k++;
             
         }
+        pr.printArray(arr);
            /* Copy remaining elements of L[] if any */
         while (i < n1) {
             arr[k] = L[i];
             i++;
             k++;
         }
-  
+        pr.printArray(arr);
         /* Copy remaining elements of R[] if any */
         while (j < n2) {
             arr[k] = R[j];
             j++;
             k++;
         }
+        pr.printArray(arr);
     
         
                 
     }
+    
+    //merge sort() function recursively calls itself to divide the array toll size  become one
     
     void sort(int arr[], int l, int r)
     {
