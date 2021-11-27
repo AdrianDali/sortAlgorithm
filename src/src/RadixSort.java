@@ -1,15 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+El tiempo de ejecucion de radix sort
  */
 package src;
 
 import java.util.Arrays;
 
 /**
- *
- * @author hermo
+ * O (nLog b (n)). Pero todavía no supera
+ * a los algoritmos de clasificación basados ​​en
+ * comparaciones. 
+ * ¿Qué pasa si aumentamos el valor de b? 
+ * ¿Cuál debería ser el valor de b para hacer 
+ * lineal la complejidad del tiempo?
+ * Si establecemos b como n, obtenemos la complejidad 
+ * de tiempo como O (n). En otras palabras,
+ * podemos ordenar una matriz de números enteros 
+ * con un rango de 1 an c si los números están representados
+ * en base n (o cada dígito toma log 2 (n) bits). 
  */
 public class RadixSort {
     
@@ -64,7 +71,11 @@ public class RadixSort {
         // instead of passing digit number, exp is passed 
         // exp is 10^i where i is current digint number 
         for(int exp = 1; m / exp > 0; exp *= 10){
+            
             countSort(arr,n,exp);
+            System.out.println("m / exp: " + m / exp );
+            System.out.println("exp: " + exp );
+            System.out.println("m: " + m );
         }
     }
 }
