@@ -6,6 +6,7 @@
 package src;
 
 import com.sun.scenario.effect.Merge;
+import static src.RadixSort.radixsort;
 
 /**
  *
@@ -34,14 +35,23 @@ public class Main {
         //System.out.println("Sorted array: ");
         //printarr.printArray(arr2);
         //---------------------------------------------------
-        int[] arr3 = {12,11,9,5,7,6};
-        System.out.println("Arr");
-        printarr.printArray(arr3);
+        //int[] arr3 = {12,11,9,5,7,6};
+        //System.out.println("Arr");
+        //printarr.printArray(arr3);
         
-        MergeSort merge = new MergeSort();
-        merge.sort(arr3, 0, arr3.length-1);
+        //MergeSort merge = new MergeSort();
+        //merge.sort(arr3, 0, arr3.length-1);
         
-        printarr.printArray(arr3);
+        //printarr.printArray(arr3);
+        //------------------------------------------------------
+        //divide and code
+        int arr[] = {170,45,75,90,802,24,2,66};
+        int n = arr.length;
+        
+        // Function Call
+        radixsort(arr,n);
+        printarr.printArray(arr);
+        
     }   
 }
 
